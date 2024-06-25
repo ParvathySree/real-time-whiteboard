@@ -5,6 +5,7 @@ import penIcon from '../assets/pen.png';
 import io from 'socket.io-client';
 
 const socket = io('https://real-time-whiteboard-server.vercel.app');
+// const socket = io('http://localhost:4000');
 
 const WhiteBoard = () => {
     const [tool, setTool] = useState('pen');

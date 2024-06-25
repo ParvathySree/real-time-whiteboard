@@ -5,9 +5,18 @@ const socketIo = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
-const io = socketIo(server);
 
 const PORT = process.env.PORT || 4000;
+
+const io = socketIo(server, {
+    cors: {
+        origin: '*',
+        methods: ['GET', 'POST']
+    }
+});
+
+
+app.use(cors());
 
 io.on('connection', (socket) => {
     console.log("New client connected");
