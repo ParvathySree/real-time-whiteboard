@@ -10,7 +10,7 @@ const io = socketIo(server);
 const PORT = process.env.PORT || 4000;
 
 io.on('connection', (socket) => {
-    console.log('New client connected');
+    console.log("New client connected");
 
     socket.on('draw', (data) => {
         socket.broadcast.emit('draw', data);
