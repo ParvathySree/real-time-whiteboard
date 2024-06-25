@@ -1,0 +1,18 @@
+.white-board{
+   background-color: #eeeae2 !important;
+   /* height: 80vh; */
+   border-radius: 10px
+}
+
+.toolbar{
+    padding: 10px;
+}
+
+.toolbar select{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #092e45;
+    color:#8ecee6;
+    cursor: pointer;
+}
