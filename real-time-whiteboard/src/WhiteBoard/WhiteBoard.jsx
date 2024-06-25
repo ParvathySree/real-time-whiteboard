@@ -4,7 +4,7 @@ import { Stage, Layer, Line, Text } from 'react-konva';
 import penIcon from '../assets/pen.png';
 import io from 'socket.io-client';
 
-const socket = io('https://real-time-whiteboard-server.vercel.app:4000');
+const socket = io('https://real-time-whiteboard-server.vercel.app');
 
 const WhiteBoard = () => {
     const [tool, setTool] = useState('pen');
